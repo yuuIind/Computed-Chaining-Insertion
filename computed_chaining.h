@@ -19,13 +19,15 @@ class ComputedChaining {
 };
 
 int ComputedChaining::hashFunction(int key) {
-
+	return key % this->size;
 }
 
 void ComputedChaining::insert(int key) {
-
+	int address = hashFunction(key);
 }
 
 void ComputedChaining::print() {
-
+	for(int i = 0; i < key; i++){
+		cout << i << " --> " << i << endl;
+	}
 }
